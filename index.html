@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suomi! 🇫🇮 – Finnisch lernen</title>
+  <meta name="description" content="Lokale, offline laufende App zum spielerischen Finnischlernen: Quiz, Tippen, Karteikarten und Blitzrunden mit XP und Leveln.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇫🇮</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <button id="btn-home" class="icon-btn hidden" aria-label="Zur Startseite">←</button>
+      <h1>Suomi! 🇫🇮</h1>
+      <button id="btn-sound" class="icon-btn" aria-label="Ton an/aus">🔊</button>
+    </header>
+
+    <div id="stats-bar" class="stats-bar"></div>
+
+    <main id="main">
+      <section id="screen-home"></section>
+      <section id="screen-game" class="hidden"></section>
+      <section id="screen-cards" class="hidden"></section>
+    </main>
+  </div>
+
+  <div id="confetti-layer" aria-hidden="true"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
